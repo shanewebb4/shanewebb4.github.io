@@ -1,0 +1,477 @@
+/*
+    GLOBAL STYLES
+*/
+
+a {
+    color: #3C413F;
+    font-style: normal;
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+input {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    font-family: 'DM Serif Dispaly', serif;
+    font-size: 1.4rem;
+    padding-bottom: .6rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+}
+
+::placeholder {
+    font-size: .9rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+/*
+    TOP PORTION
+*/
+.body {
+    /* background-color: #333333; */
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.top-bar {
+    background-color: #3C413F;
+    width: 100%;
+    height: 1%;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.home-image-container {
+    width: 60%;
+}
+
+.home-image {
+    /* src: url('assests/headshot-shane-idaho.jpeg'); */
+    width: 100%;
+    height: auto;
+}
+
+.header-name {
+    color: #ffffff;
+    line-height: 2.1425rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5625rem;
+    font-family: 'DM Serif Display', serif;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    margin: .7rem;
+}
+
+#header-contact {
+    color: #ffffff;
+    line-height: 2.1425rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5625rem;
+    font-family: 'DM Serif Display', serif;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    margin: .7rem;
+}
+
+.header-contact:hover {
+    cursor: pointer;
+}
+
+/*
+    CENTER PORTION
+*/
+
+
+/*
+    BOTTOM LEFT PORTION
+*/
+
+.side-text {
+    color: #3C413F;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* padding: 2rem; */
+    width: 50%;
+}
+
+.top-box {
+    padding: 2rem;
+}
+
+#name-header {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2.8125rem;
+    line-height: 3.3638rem;
+    font-style: normal;
+    font-family: 'DM Serif Display', serif;
+}
+
+#developer-header {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2.8125rem;
+    line-height: 3.3638rem;
+    font-style: normal;
+    font-family: 'DM Serif Display', serif;
+}
+
+#about-me-text {
+    margin-top: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+#about-me-text-cont {
+    margin-top: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#worked-on-list {
+    font-family: 'Open Sans', sans-serif;
+    list-style-type:;
+}
+
+/*
+    BOTTOM RIGHT PORTION
+*/
+
+.bottom-box {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.products-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+
+#products-icon {
+    margin-right: .5rem;
+}
+
+#products-header {
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.875rem;
+    line-height: 2.5706rem;
+}
+
+#products-info {
+    margin-left: .5rem;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.2769rem;
+}
+
+.technologies-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+}
+
+#technologies-icon {
+    margin-right: .5rem;
+}
+
+#technologies-header {
+    margin-left: .5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.875rem;
+    line-height: 2.5706rem;
+}
+
+#technologies-info {
+    margin-left: .5rem;
+    margin-top: 0;
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.2769rem;
+}
+
+.contact-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+}
+
+#contact-icon {
+    margin-right: .5rem;
+}
+
+#contact-header {
+    margin-left: .5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.875rem;
+    line-height: 2.5706rem;
+}
+
+#contact-info {
+    margin-left: .5rem;
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.2769rem;
+}
+
+#email-me-button {
+    font-family: 'Open Sans', sans-serif;
+    color: #3C413F;
+    font-style: normal;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/*
+    MODAL
+*/
+.modal {
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-content {
+    font-family: 'DM Serif Display', serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    border-radius: 10px;
+    width: 40rem;
+    height: 30rem;
+    background-color: #3C413F;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+#contact-form-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+#input-containers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+
+#label-name {
+    width: 100%;
+    margin-right: 1rem;
+}
+
+#input-name {
+    width: 100%;
+    height: 1rem;
+}
+
+#label-orgo {
+    width: 100%;
+    margin-left: 1rem;
+}
+
+#input-organization {
+    width: 100%;
+    height: 1rem;
+}
+
+#input-email {
+    width: 100%;
+    height: 1rem;
+}
+
+#name-and-orgo-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#email-inputs {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#message-inputs {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#label-message {
+    width: 80%;
+}
+
+textarea {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    width: 100%;
+    height: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: .5rem;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+#modal-button-container {
+    display: flex;
+    justify-content: center;
+}
+#modal-button-send {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    width: 4.5rem;
+    height: 2rem;
+    color: #3C413F;
+    background-color: #ffffff;
+    font-family: 'DM Serif Display', serif;
+}
+
+#modal-button-send:hover {
+    background-color: #888888;
+    border-color: #888888;
+}
+
+#modal-button-link {
+    text-decoration: none;
+}
+
+#modal-button-exit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#close-modal-button {
+    margin: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #ffffff;
+    width: 1%;
+    height: 1.5rem;
+    position: absolute;
+}
+
+#close-modal-button:hover {
+    color: #888888
+}
+#close-modal-button:foucs {
+    border-color: #3C413F;
+}
+
+.submit-button {
+    margin: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #3C413F;
+    color: white;
+    border-radius: 5px;
+    width: 70%;
+    height: 2rem;
+}
+
+.submit-button:hover {
+    background-color: #9ba7a2;
+}
+.submit-button:focus {
+    border-color: #3C413F;
+}
+
+#hidden-form-subject {
+    display: none;
+}

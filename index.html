@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type='text/Javascript' src='contactForm.js'></script>
+
+        <link rel="stylesheet" href="./styles.css">
+        <title>Shane Webb's Portfolio</title>
+        <link rel='shortcut icon' type='image/jpeg' href='assests/icons/favicon.png'/>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap');
+        </style>
+    </head>
+    <body class='body'>
+        <main>
+
+            <div class='top-bar'>
+                <p class='header-name'>Shane Webb</p>
+                <button class='open-modal' id='header-contact'>Contact</button>
+            </div>
+    
+            <div class='content'>
+                <div class='home-image-container'>
+                    <img class='home-image' src='assests/headshot-shane-idaho.jpeg'>
+                </div>
+        
+                <div class='side-text'>
+                    <div class='top-box'>
+                        <p id='name-header'>Hey, I'm Shane.</p>
+                        <p id='developer-header'>I'm a software developer.</p>
+                        <p id='about-me-text'>I hold a Masters Degree in Software Development from the University of Utah. 
+                            I love to create software that is reliable, scalable, and most of all, useful.</p>
+                        <p id='about-me-text-cont'>Things I've worked on include:</p>
+                        <ul id='worked-on-list'>
+                            <li>Music worksheet generator (React front-end app)</li>
+                            <li>Chatroom server in Java</li>
+                            <li>Data visualization using Python and Jupyter Notebooks</li>
+                            <li>Android lifestyle app in Kotlin</li>
+                        </ul>
+                    </div>
+        
+                    <div class='bottom-box'>
+        
+                        <div class='products-line'>
+                            <svg id='products-icon' width="2rem" height="100%" viewBox="-3 20 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.4 10.6L2.8 6L7.4 1.4L6 0L0 6L6 12L7.4 10.6ZM12.6 10.6L17.2 6L12.6 1.4L14 0L20 6L14 12L12.6 10.6Z" fill="#3C413F"/>
+                            </svg>
+                            <div id='products-text'>
+                                <p id='products-header'>I build products.</p>
+                                <p id='products-info'>I'm currently working on a <a href='./assests/music-worksheet-screenshot.png' target='_blank' rel='noopener noreferrer'>music worksheet generator.</a></p>
+                            </div>
+                        </div>
+        
+                        <div class='technologies-line'>
+                            <svg id='technologies-icon' width="2rem" height="100%" viewBox="-3 17 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0.75H2C0.9 0.75 0 1.65 0 2.75V14.75C0 15.85 0.9 16.75 2 16.75H9V18.75H7V20.75H15V18.75H13V16.75H20C21.1 16.75 22 15.85 22 14.75V2.75C22 1.65 21.1 0.75 20 0.75ZM20 14.75H2V2.75H20V14.75Z" fill="#3C413F"/>
+                            </svg>    
+                            <div id='technologies-text'>
+                                <p id='technologies-header'>I use different technologies.</p>
+                                <p id='technologies-info'>Javascript/Typescript - React - Java - Python</p>
+                            </div>
+                        </div>
+        
+                        <div class='contact-line'>
+                            <svg id='contact-icon' width="2rem" height="100%" viewBox="-3 13 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0.75H2C0.9 0.75 0.00999999 1.65 0.00999999 2.75L0 14.75C0 15.85 0.9 16.75 2 16.75H18C19.1 16.75 20 15.85 20 14.75V2.75C20 1.65 19.1 0.75 18 0.75ZM18 4.75L10 9.75L2 4.75V2.75L10 7.75L18 2.75V4.75Z" fill="#3C413F"/>
+                            </svg>
+                            <div id='contact-text'>
+                                <p id='contact-header'>I'm available for hire.</p>
+                                <p id='contact-info'>Let's chat! <button class='open-modal' id='email-me-button'>Email me,</button>check out <a href='https://www.linkedin.com/in/shane-webb4/' target='_blank' rel='noopener noreferrer'>LinkedIn,</a>
+                                    or view <a href='/Shane_Webb_Lucinda.pdf' target='_blank' rel='noopener noreferrer'>my resume</a></p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <div class="modal" role="dialog" aria-labelledby="Modal_Title" aria-describedby="Modal_Description" aria-hidden="true" style="display: none">
+            <div class="modal-content">
+                <p id="Modal_Description" class="visually-hidden">
+                    Enter your name, email, and a message and I will get back to you.
+                </p>
+                <div id='input-containers'>
+                    <div id='contact-form-title'>
+                        <h2>
+                            Contact Form
+                        </h2>
+                    </div>
+                    <form id=contact-form>
+                        <div id='name-and-orgo-inputs'>
+                            <label for='input-name' id='label-name'>
+                                Name*
+                                <input type="text" maxlength="30" placeholder='Who are you?' id='input-name' required>
+                            </label>
+                            <label for='input-organization' id='label-orgo'>
+                                Organization*
+                                <input type='text' maxlength='50' placeholder='Who do you represent?' id='input-organization' required>
+                            </label>
+                        </div>
+                        <div id='email-inputs'>
+                            <label for='input-email'>
+                                Email*</br>
+                                <input type='email' maxlength="50" placeholder='How do I get a hold of you?' id='input-email' required>
+                            </label>
+                        </div>
+                        <div id='message-inputs'>
+                            <label for='body' id='label-message'>
+                                Message
+                                <textarea name='body' maxlength="500" placeholder='Tell me something interesting' id='input-message'></textarea>
+                            </label>
+                        </div>
+                        <input name='subject' id='hidden-form-subject' type='text'>
+                        <div id='modal-button-container'>
+                            <div id='modal-button-send'>
+                                <!-- <a id='modal-button-link' href='mailto:shanewebbu@gmail.com?subject=' target='_blank' rel='noopener noreferrer'>
+                                    Send
+                                </a> -->
+                                Send
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div id='modal-button-exit-container'>
+                    <button class="close-modal" id='close-modal-button'>&#x2715</button>
+                </div>
+            </div>
+        </div>
+        <script src='modal.js'></script>
+    </body>
+</html>
